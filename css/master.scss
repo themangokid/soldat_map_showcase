@@ -1,0 +1,48 @@
+@import "./variables";
+@import "./functions";
+
+.basic_properties {
+    @include flexBox();
+}
+
+.leaf {
+    @extend .basic_properties;
+    @include image($soldat_dm_leafs);
+    @include fontProperties($leaf_color_shadow);
+}
+
+.ash  {
+    @extend .basic_properties;
+    @include image($soldat_ctf_ash);
+    @include fontProperties($ash_color_shadow);
+    color: $ash_color;
+}
+
+.ice_beam {
+    @extend .basic_properties;
+    @include image($soldat_ctf_icebeam);
+    @include fontProperties($ice_beam_color_shadow);
+    color: $ice_beam_color;
+}
+
+.cobra {
+    @extend .basic_properties;
+    @include image($soldat_ctf_cobra);
+    @include fontProperties($cobra_color_shadow);
+    color: $cobra_color;
+}
+
+.campeche {
+    @extend .basic_properties;
+    @include image($soldat_ctf_campeche);
+    @include fontProperties($campeche_color_shadow);
+    color: $campeche_color;
+}
+
+.arena2 {
+    @extend .basic_properties;
+    @include image($soldat_dm_arena2);
+    @include fontProperties($arena2_color_shadow);
+    $background-color: $arena2_color;
+    color: $arena2_color;
+}
