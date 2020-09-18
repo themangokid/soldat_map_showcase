@@ -5,6 +5,11 @@
     @include flexBox();
 }
 
+.sass_docs {
+    @extend .basic_properties;
+    @include fontProperties($arena2_color)
+}
+
 .leaf {
     @extend .basic_properties;
     @include image($soldat_dm_leafs);
