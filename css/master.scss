@@ -1,13 +1,21 @@
 @import "./variables";
 @import "./functions";
 
+/* Lägger alla effekter på classen
+    Ex: .sass_docs
+    @exstend och @include för att lägga på css
+    I detta fallet behöver vi inte inkludera image
+
+*/
+
 .basic_properties {
     @include flexBox();
 }
 
 .sass_docs {
     @extend .basic_properties;
-    @include fontProperties($arena2_color)
+    @include fontProperties($ash_color);
+    color: $campeche_color;
 }
 
 .leaf {
