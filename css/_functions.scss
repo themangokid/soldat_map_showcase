@@ -20,3 +20,23 @@
     background-repeat: no-repeat;
     background-image: url($url);
 }
+
+
+/*Expermimental FUNKAR! :DDDDDDDDDDD*/
+/*
+    Det går alltså att lägga till en mixin som 
+*/
+@mixin animationElement() {
+    @keyframes animationElement {
+        0%   {background-color:red; left:0px; top:0px;}
+        50%  {background-color: orange; left: 0px; top:-30px;}
+        100% {background-color:green; left:600px; top:200px;}
+    }
+}
+
+div {
+    animation-name: animationElement;
+    /*animation-duration: 2s;*/
+    animation: animationElement 2s infinite;
+  }
+  

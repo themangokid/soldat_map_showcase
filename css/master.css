@@ -1,4 +1,16 @@
 @charset "UTF-8";
+/*Expermimental FUNKAR! :DDDDDDDDDDD*/
+/*
+    Det går alltså att lägga till en mixin som 
+*/
+div {
+  -webkit-animation-name: animationElement;
+          animation-name: animationElement;
+  /*animation-duration: 2s;*/
+  -webkit-animation: animationElement 2s infinite;
+          animation: animationElement 2s infinite;
+}
+
 /* Lägger alla effekter på classen
     Ex: .sass_docs
     @exstend och @include för att lägga på css
@@ -16,6 +28,42 @@
       -ms-flex-align: center;
           align-items: center;
   height: 115vh;
+}
+
+@-webkit-keyframes animationElement {
+  0% {
+    background-color: red;
+    left: 0px;
+    top: 0px;
+  }
+  50% {
+    background-color: orange;
+    left: 0px;
+    top: -30px;
+  }
+  100% {
+    background-color: green;
+    left: 600px;
+    top: 200px;
+  }
+}
+
+@keyframes animationElement {
+  0% {
+    background-color: red;
+    left: 0px;
+    top: 0px;
+  }
+  50% {
+    background-color: orange;
+    left: 0px;
+    top: -30px;
+  }
+  100% {
+    background-color: green;
+    left: 600px;
+    top: 200px;
+  }
 }
 
 .sass_docs {

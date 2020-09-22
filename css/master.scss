@@ -10,12 +10,14 @@
 
 .basic_properties {
     @include flexBox();
+    @include animationElement();
 }
 
 .sass_docs {
     @extend .basic_properties;
     @include fontProperties($ash_color);
     color: $campeche_color;
+    
 }
 
 .leaf {
