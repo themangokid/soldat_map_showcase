@@ -1,21 +1,17 @@
 @charset "UTF-8";
-/*Expermimental FUNKAR! :DDDDDDDDDDD*/
-/*
-    Det går alltså att lägga till en mixin som 
-*/
+/* En funktion som animerar alla div-element så att med en enda definition. */
 div {
   -webkit-animation-name: animationElement;
           animation-name: animationElement;
   /*animation-duration: 2s;*/
-  -webkit-animation: animationElement 2s infinite;
-          animation: animationElement 2s infinite;
+  -webkit-animation: animationElement 5s infinite;
+          animation: animationElement 5s infinite;
 }
 
 /* Lägger alla effekter på classen
     Ex: .sass_docs
     @exstend och @include för att lägga på css
     I detta fallet behöver vi inte inkludera image
-
 */
 .basic_properties, .sass_docs, .leaf, .ash, .ice_beam, .cobra, .campeche, .arena2 {
   display: -webkit-box;
