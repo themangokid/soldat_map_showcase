@@ -12,6 +12,16 @@
     @include animationElement();
 }
 
+.herman{
+    @extend .basic_properties;
+}
+
+.asdf {
+    @extend .basic_properties;
+    @include fontProperties($ash_color);
+
+}
+
 .sass_docs {
     @extend .basic_properties;
     @include fontProperties($ash_color);
