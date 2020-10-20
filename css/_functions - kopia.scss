@@ -1,12 +1,12 @@
 @import "./variables";
 
+
 @mixin flexBox {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 115vh;
 }
-
 
 @mixin fontProperties($color_shadow) {
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
@@ -16,20 +16,23 @@
 }
 
 @mixin image($url) {
+    background-position: center;
+    background-repeat: no-repeat;
     background-image: url($url);
 }
 
 /* En funktion som animerar alla div-element så att med en enda definition. */
 @mixin animationElement() {
     @keyframes animationElement {
-        0%   {background-color:lightred; left:0px; top:0px;}
+        0%   {background-color:red; left:0px; top:0px;}
         50%  {background-color: orange; left: 0px; top:-30px;}
-        100% {background-color:lightcoral; left:600px; top:200px;}
+        100% {background-color:green; left:600px; top:200px;}
     }
 }
 
 div {
     animation-name: animationElement;
     /*animation-duration: 2s;*/
-    animation: animationElement 10s infinite;
+    animation: animationElement 5s infinite;
   }
+  
